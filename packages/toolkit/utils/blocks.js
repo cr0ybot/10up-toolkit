@@ -99,7 +99,7 @@ const transformBlockJson = (content, absoluteFilename) => {
 		if (metadata[key]) {
 			newMetadata[key] = transformSassAsset(metadata[key]);
 		}
-	}
+	});
 
 	return JSON.stringify(newMetadata, null, 2);
 };
